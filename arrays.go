@@ -25,4 +25,9 @@ func main() {
 		fmt.Println(data[i], len(data[i]))
 	}
 
+	fmt.Println("Update")
+	data[1] = "Windows 10"
+	data[2] = "Linux 16.04"
+	data[3] = "Raspbian Buster"
+	fmt.Println(data)
 }
