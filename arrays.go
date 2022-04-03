@@ -30,4 +30,14 @@ func main() {
 	data[2] = "Linux 16.04"
 	data[3] = "Raspbian Buster"
 	fmt.Println(data)
+
+	var newData [10]string
+	// copy old data to new data array
+	for i := 0; i < len(data); i++ {
+		newData[i] = data[i]
+	}
+	newData[7] = "Ubuntu"
+	newData[8] = "MS-Dos"
+	newData[9] = "Solaris"
+	fmt.Println(newData)
 }
