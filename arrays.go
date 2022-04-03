@@ -12,32 +12,31 @@ func main() {
 	}
 	fmt.Println(a)
 
-	var data [7]string
-	data[0] = "Operating System List"
-	data[1] = "Windows XP"
-	data[2] = "Linux 1.0"
-	data[3] = "Raspbian Teensy"
-	data[4] = "MacOS"
-	data[5] = "IOS"
-	data[6] = "Google Andriod"
+	var OperatingSystemList [6]string
+	OperatingSystemList[0] = "Windows XP"
+	OperatingSystemList[1] = "Linux 1.0"
+	OperatingSystemList[2] = "Raspbian Teensy"
+	OperatingSystemList[3] = "MacOS"
+	OperatingSystemList[4] = "IOS"
+	OperatingSystemList[5] = "Google Andriod"
 
-	for i := 0; i < len(data); i++ {
-		fmt.Println(data[i], len(data[i]))
+	for i := 0; i < len(OperatingSystemList); i++ {
+		fmt.Println(OperatingSystemList[i], len(OperatingSystemList[i]))
 	}
 
 	fmt.Println("Update")
-	data[1] = "Windows 10"
-	data[2] = "Linux 16.04"
-	data[3] = "Raspbian Buster"
-	fmt.Println(data)
+	OperatingSystemList[0] = "Windows 10"
+	OperatingSystemList[1] = "Linux 16.04"
+	OperatingSystemList[2] = "Raspbian Buster"
+	fmt.Println(OperatingSystemList)
 
-	var newData [10]string
-	// copy old data to new data array
-	for i := 0; i < len(data); i++ {
-		newData[i] = data[i]
+	var NewOperatingSystemList [10]string
+	// copy old OperatingSystemList to new OperatingSystemList array
+	for i := 0; i < len(OperatingSystemList); i++ {
+		NewOperatingSystemList[i] = OperatingSystemList[i]
 	}
-	newData[7] = "Ubuntu"
-	newData[8] = "MS-Dos"
-	newData[9] = "Solaris"
-	fmt.Println(newData)
+	NewOperatingSystemList[6] = "Ubuntu"
+	NewOperatingSystemList[7] = "MS-Dos"
+	NewOperatingSystemList[8] = "Solaris"
+	fmt.Println(NewOperatingSystemList)
 }
