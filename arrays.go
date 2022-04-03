@@ -39,4 +39,8 @@ func main() {
 	NewOperatingSystemList[7] = "MS-Dos"
 	NewOperatingSystemList[8] = "Solaris"
 	fmt.Println(NewOperatingSystemList)
+
+	fmt.Println(NewOperatingSystemList[0:3])
+	fmt.Println(NewOperatingSystemList[3:6])
+	fmt.Println(NewOperatingSystemList[6:])
 }
